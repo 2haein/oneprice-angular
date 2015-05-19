@@ -1,19 +1,18 @@
 # AngularJS-Gulp Starter
-This is a starter project for AngularJS with Gulp.
 
 ## Introduction
 
-This app uses Gulp as the build system that automates tasks such as code minification, copying JS files and static images etc.
+This is a application skeleton for a typical AngularJS web app. In addition to the Angular code, it also contains unit tests and end-to-end (E2E) tests. Gulp is used as the build system that automates tasks such as code minification, copying JS files and static images etc.
 
-This web app was developed using a test-driven development (TDD) approach. The repository includes both unit-tests and E2E tests. For unit testing, I used Karma, Mocha, Chai and Sinon etc. For end-to-end (E2E) tests, I used Protractor, Mocha, Chai and Sinon etc.
+For unit testing, Karma, Mocha, Chai and Sinon etc are used. For end-to-end (E2E) tests, Protractor, Mocha, Chai and Sinon etc are used.
 
 
 Installtion
 -----------
 
 ```sh
-$ git clone <repo URL>
-$ cd [dir name]
+$ git clone git@github.com:labsterx/angularjs-gulp-starter.git
+$ cd angularjs-gulp-starter
 $ npm install
 ```
 
