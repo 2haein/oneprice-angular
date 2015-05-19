@@ -23,7 +23,6 @@ angular.module('MyApp')
 					return defer.promise;
 				}
 
-
 			};
 
 	}]);

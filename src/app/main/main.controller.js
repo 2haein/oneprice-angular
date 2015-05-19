@@ -5,6 +5,4 @@ angular.module('MyApp')
 		['$scope',
 		function ($scope) {
 
-			console.log('MainCtrl');
-
 	}]);

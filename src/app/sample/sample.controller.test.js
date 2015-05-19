@@ -16,7 +16,7 @@ describe('SampleCtrl', function(){
 
 		mockSampleService.getData = function() {
 			return $q.when({data: '<DATA>'});
-		}
+		};
 
 		scope = $rootScope.$new();
 		createCtrl = function() {
@@ -58,7 +58,7 @@ describe('SampleCtrl', function(){
 			beforeEach(inject(function($q){
 				mockSampleService.getData = function() {
 					return $q.reject('error');
-				}
+				};
 				createCtrl();
 				scope.loadData();
 				scope.$apply();

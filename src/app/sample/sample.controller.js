@@ -2,8 +2,8 @@
 
 angular.module('MyApp')
 	.controller('SampleCtrl',
-		['$scope', 'SampleService', '$routeParams',
-		function ($scope, SampleService, $routeParams) {
+		['$scope', 'SampleService',
+		function ($scope, SampleService) {
 
 			$scope.list = null;
 			$scope.error = null;
@@ -14,7 +14,7 @@ angular.module('MyApp')
 					$scope.list = data.data;
 				},
 				function(err) {
-					$scope.error = "Sorry, error in getting data: " + err;
+					$scope.error = 'Sorry, error in getting data: ' + err;
 				});
 			};
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyApp', ['ngSanitize', 'ngRoute'])
+angular.module('MyApp', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
@@ -15,4 +15,9 @@ angular.module('MyApp', ['ngSanitize', 'ngRoute'])
 				redirectTo: '/'
 			});
 	})
+
+	.controller('NavBarCtrl', ['$scope', function ($scope) {
+			$scope.isCollapsed = true;
+	}])
+
 ;
