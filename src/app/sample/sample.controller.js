@@ -5,13 +5,12 @@ angular.module('MyApp')
 		['$scope', 'SampleService', '$routeParams',
 		function ($scope, SampleService, $routeParams) {
 
-			console.log('SampleCtrl');
+			$scope.list = null;
+			$scope.error = null;
 
 			$scope.loadData = function() {
-				console.log('loadData');
 				SampleService.getData()
 				.then(function(data) {
-					// console.log(data);
 					$scope.list = data.data;
 				},
 				function(err) {
