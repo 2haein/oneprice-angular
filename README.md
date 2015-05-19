@@ -49,6 +49,10 @@ $ gulp test-e2e
 Deployment
 --------------
 
+```sh
+$ gulp build
+```
+
 Deploy the contents in the "dist" directory to the production server.
 
 

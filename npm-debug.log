@@ -1,0 +1,184 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json angularjs-gulp-starter@0.0.1 No repository field.
+5 verbose install where, deps [ 'C:\\Users\\user\\.babun\\cygwin\\home\\user\\projects\\angularjs-gulp-starter',
+5 verbose install   [ 'browser-sync',
+5 verbose install     'chai',
+5 verbose install     'chai-as-promised',
+5 verbose install     'chalk',
+5 verbose install     'del',
+5 verbose install     'gulp',
+5 verbose install     'gulp-angular-templatecache',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'gulp-cache',
+5 verbose install     'gulp-csso',
+5 verbose install     'gulp-filter',
+5 verbose install     'gulp-flatten',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-inject',
+5 verbose install     'gulp-jshint',
+5 verbose install     'gulp-karma',
+5 verbose install     'gulp-load-plugins',
+5 verbose install     'gulp-minify-html',
+5 verbose install     'gulp-ng-annotate',
+5 verbose install     'gulp-protractor',
+5 verbose install     'gulp-replace',
+5 verbose install     'gulp-rev',
+5 verbose install     'gulp-rev-replace',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-size',
+5 verbose install     'gulp-uglify',
+5 verbose install     'gulp-useref',
+5 verbose install     'http-proxy',
+5 verbose install     'jshint-stylish',
+5 verbose install     'karma-chai-plugins',
+5 verbose install     'karma-chrome-launcher',
+5 verbose install     'karma-coverage',
+5 verbose install     'karma-mocha',
+5 verbose install     'karma-sinon-chai',
+5 verbose install     'karma-spec-reporter',
+5 verbose install     'main-bower-files',
+5 verbose install     'mocha',
+5 verbose install     'protractor',
+5 verbose install     'require-dir',
+5 verbose install     'sinon',
+5 verbose install     'sinon-chai',
+5 verbose install     'uglify-save-license',
+5 verbose install     'wiredep' ] ]
+6 verbose install where, peers [ 'C:\\Users\\user\\.babun\\cygwin\\home\\user\\projects\\angularjs-gulp-starter',
+6 verbose install   [] ]
+7 info preinstall angularjs-gulp-starter@0.0.1
+8 verbose already installed skipping gulp-flatten@~0.0.4 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+9 verbose already installed skipping gulp-imagemin@~2.0.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+10 verbose already installed skipping gulp-inject@~1.0.2 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+11 verbose already installed skipping gulp-jshint@~1.9.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+12 verbose already installed skipping gulp-karma@~0.0.4 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+13 verbose already installed skipping gulp-load-plugins@~0.7.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+14 verbose already installed skipping gulp-minify-html@~0.1.7 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+15 silly cache add args [ 'gulp-ng-annotate@~0.15.4', null ]
+16 verbose cache add spec gulp-ng-annotate@~0.15.4
+17 silly cache add parsed spec { raw: 'gulp-ng-annotate@~0.15.4',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'gulp-ng-annotate',
+17 silly cache add   rawSpec: '~0.15.4',
+17 silly cache add   spec: '>=0.15.4 <0.16.0',
+17 silly cache add   type: 'range' }
+18 verbose addNamed gulp-ng-annotate@>=0.15.4 <0.16.0
+19 silly addNamed semver.valid null
+20 silly addNamed semver.validRange >=0.15.4 <0.16.0
+21 silly addNameRange { name: 'gulp-ng-annotate',
+21 silly addNameRange   range: '>=0.15.4 <0.16.0',
+21 silly addNameRange   hasData: false }
+22 silly mapToRegistry name gulp-ng-annotate
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/gulp-ng-annotate
+26 verbose addNameRange registry:https://registry.npmjs.org/gulp-ng-annotate not in flight; fetching
+27 verbose already installed skipping gulp-protractor@~0.0.11 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+28 verbose already installed skipping gulp-replace@~0.5.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+29 verbose already installed skipping gulp-rev@~2.0.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+30 verbose already installed skipping gulp-rev-replace@~0.3.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+31 verbose already installed skipping gulp-sass@^2.0.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+32 verbose already installed skipping gulp-size@~1.1.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+33 verbose already installed skipping gulp-uglify@~1.0.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+34 verbose already installed skipping gulp-useref@~1.0.2 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+35 verbose already installed skipping http-proxy@~1.7.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+36 verbose already installed skipping jshint-stylish@~1.0.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+37 verbose request uri https://registry.npmjs.org/gulp-ng-annotate
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 8:40:36 PM
+40 verbose request id b29abd0cff4726ca
+41 verbose etag "3MZ7XFUIWTW8Y8K11I7BM9Q30"
+42 http request GET https://registry.npmjs.org/gulp-ng-annotate
+43 verbose already installed skipping karma-chai-plugins@~0.2.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+44 verbose already installed skipping karma-chrome-launcher@^0.1.4 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+45 verbose already installed skipping karma-coverage@~0.2.4 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+46 verbose already installed skipping karma-mocha@~0.1.6 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+47 verbose already installed skipping karma-sinon-chai@~0.2.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+48 verbose already installed skipping karma-spec-reporter@0.0.13 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+49 verbose already installed skipping main-bower-files@~2.4.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+50 verbose already installed skipping mocha@~1.20.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+51 verbose already installed skipping protractor@~1.4.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+52 verbose already installed skipping require-dir@~0.1.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+53 verbose already installed skipping sinon@~1.10.3 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+54 verbose already installed skipping sinon-chai@~2.5.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+55 verbose already installed skipping uglify-save-license@~0.4.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+56 verbose already installed skipping wiredep@~2.2.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+57 verbose already installed skipping browser-sync@~1.7.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+58 verbose already installed skipping chai@~1.9.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+59 verbose already installed skipping chai-as-promised@~4.1.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+60 verbose already installed skipping chalk@~0.5.1 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+61 verbose already installed skipping del@~0.1.3 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+62 verbose already installed skipping gulp@~3.8.10 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+63 verbose already installed skipping gulp-angular-templatecache@~1.4.2 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+64 verbose already installed skipping gulp-autoprefixer@~2.0.0 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+65 verbose already installed skipping gulp-cache@~0.2.4 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+66 verbose already installed skipping gulp-csso@~0.2.9 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+67 verbose already installed skipping gulp-filter@~1.0.2 C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+68 http 304 https://registry.npmjs.org/gulp-ng-annotate
+69 silly get cb [ 304,
+69 silly get   { date: 'Tue, 19 May 2015 19:40:37 GMT',
+69 silly get     via: '1.1 varnish',
+69 silly get     'cache-control': 'max-age=60',
+69 silly get     etag: '"3MZ7XFUIWTW8Y8K11I7BM9Q30"',
+69 silly get     age: '0',
+69 silly get     connection: 'keep-alive',
+69 silly get     'x-served-by': 'cache-lhr6335-LHR',
+69 silly get     'x-cache': 'HIT',
+69 silly get     'x-cache-hits': '1',
+69 silly get     'x-timer': 'S1432064437.416781,VS0,VE645',
+69 silly get     vary: 'Accept' } ]
+70 verbose etag https://registry.npmjs.org/gulp-ng-annotate from cache
+71 verbose get saving gulp-ng-annotate to C:\Users\user\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-ng-annotate\.cache.json
+72 silly addNameRange number 2 { name: 'gulp-ng-annotate',
+72 silly addNameRange   range: '>=0.15.4 <0.16.0',
+72 silly addNameRange   hasData: true }
+73 silly addNameRange versions [ 'gulp-ng-annotate',
+73 silly addNameRange   [ '0.1.0',
+73 silly addNameRange     '0.1.1',
+73 silly addNameRange     '0.2.0',
+73 silly addNameRange     '0.3.0',
+73 silly addNameRange     '0.3.1',
+73 silly addNameRange     '0.3.2',
+73 silly addNameRange     '0.3.3',
+73 silly addNameRange     '0.3.4',
+73 silly addNameRange     '0.3.5',
+73 silly addNameRange     '0.3.6',
+73 silly addNameRange     '0.4.0',
+73 silly addNameRange     '0.4.1',
+73 silly addNameRange     '0.4.2',
+73 silly addNameRange     '0.4.3',
+73 silly addNameRange     '0.4.4',
+73 silly addNameRange     '0.5.0',
+73 silly addNameRange     '0.5.1',
+73 silly addNameRange     '0.5.2',
+73 silly addNameRange     '0.5.3' ] ]
+74 verbose stack Error: No compatible version found: gulp-ng-annotate@'>=0.15.4 <0.16.0'
+74 verbose stack Valid install targets:
+74 verbose stack ["0.1.0","0.1.1","0.2.0","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.4.0","0.4.1","0.4.2","0.4.3","0.4.4","0.5.0","0.5.1","0.5.2","0.5.3"]
+74 verbose stack
+74 verbose stack     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:259:12)
+74 verbose stack     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:238:17)
+74 verbose stack     at setData (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:215:5)
+74 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+74 verbose stack     at f (C:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:17:25)
+74 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:173:7)
+74 verbose stack     at FSReqWrap.oncomplete (fs.js:99:15)
+75 verbose cwd C:\Users\user\.babun\cygwin\home\user\projects\angularjs-gulp-starter
+76 error Windows_NT 6.3.9600
+77 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+78 error node v0.12.0
+79 error npm  v2.5.1
+80 error code ETARGET
+81 error notarget No compatible version found: gulp-ng-annotate@'>=0.15.4 <0.16.0'
+81 error notarget Valid install targets:
+81 error notarget ["0.1.0","0.1.1","0.2.0","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.4.0","0.4.1","0.4.2","0.4.3","0.4.4","0.5.0","0.5.1","0.5.2","0.5.3"]
+81 error notarget
+81 error notarget This is most likely not a problem with npm itself.
+81 error notarget In most cases you or one of your dependencies are requesting
+81 error notarget a package version that doesn't exist.
+82 verbose exit [ 1, true ]
