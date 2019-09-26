@@ -1,0 +1,187 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="dropdown profile-element" dropdown>
+                    <a class="dropdown-toggle" dropdown-toggle href>
+                        <span class="clear">
+                            <div class="block m-t-xs">
+                                <strong class="font-bold" style="font-size:11px;word-wrap:break-word;">{{$account.login}}</strong><br>
+                                <div style="margin:5px 0;">
+                                    <strong class="font-bold">{{$account.name}}</strong>
+                                    <span class="badge badge-primary">Admin</span>
+                                </div>
+                            </div>
+                            <span class="text-muted text-xs block">menu<b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInUp m-t-xs">
+                        <li><a ng-click="registerAdminModal()">계정 생성하기</a></li>
+                        <li><a ng-click="ctrl.password()">비밀번호 변경</a></li>
+                        <li><a ng-click="ctrl.logout()">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">ONE</div>
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard.main"  ui-sref-opts="{reload: true, inherit: false}"><i class="fa fa-dashboard"></i> <span class="nav-label">대시보드</span> </a>
+            </li>
+            <li ng-class="{active: $state.includes('product') || $state.includes('goods')}">
+                <a href=""><i class="fa fa-gift"></i> <span class="nav-label">상품관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('product')}">
+                    <li ng-class="{active: $state.includes('product.list') || $state.includes('product.view')}"><a ui-sref="product.list" ui-sref-opts="{reload: true, inherit: false}">상품 리스트</a></li>
+                    <li ng-class="{active: $state.includes('goods.list') || $state.includes('goods.view')}"><a ui-sref="goods.list" ui-sref-opts="{reload: true, inherit: false}">Goods 리스트</a></li>
+                    <li ng-class="{active: $state.includes('product.edit')}"><a ui-sref="product.edit({id:0})" ui-sref-opts="{reload: true, inherit: false}">신규 상품등록</a></li>
+                    <li ng-class="{active: $state.includes('product.upload')}"><a ui-sref="product.upload" ui-sref-opts="{reload: true, inherit: false}">상품 일괄등록</a></li>
+                    <li ng-class="{active: $state.includes('product.brand')}"><a ui-sref="product.brand" ui-sref-opts="{reload: true, inherit: false}">제조사/브랜드 관리</a></li>
+                    <li ng-class="{active: $state.includes('product.onedeal')}"><a ui-sref="product.onedeal" ui-sref-opts="{reload: true, inherit: false}">원딜 관리</a></li>
+                    <li ng-class="{active: $state.includes('product.event')}"><a ui-sref="product.event" ui-sref-opts="{reload: true, inherit: false}">이벤트 관리</a></li>
+                    <li ng-class="{active: $state.includes('product.stock')}"><a ui-sref="product.stock" ui-sref-opts="{reload: true, inherit: false}">재고 관리(엑셀)</a></li>
+                    <li ng-class="{active: $state.includes('product.chargeHistory')}"><a ui-sref="product.chargeHistory" ui-sref-opts="{reload: true, inherit: false}">상품 수수료 변동이력</a></li>
+                    <li ng-class="{active: $state.includes('product.mdpick')}"><a ui-sref="product.mdpick" ui-sref-opts="{reload: true, inherit: false}">MD's Pick 관리</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('product2') || $state.includes('goods')}">
+                <a href=""><i class="fa fa-gift"></i> <span class="nav-label">상품 관리 2.0</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('product2')}">
+                    <li ng-class="{active: $state.includes('product2.register')}"><a ui-sref="product2.register({id:0})" ui-sref-opts="{reload: true, inherit: false}">상품 등록</a></li>
+                    <li ng-class="{active: $state.includes('product2.edit')}"><a ui-sref="product2.edit({id:0})" ui-sref-opts="{reload: true, inherit: false}">상품 수정</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('delivery')}">
+                <a href=""><i class="fa fa-truck"></i> <span class="nav-label">주문/배송내역</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('delivery')}">
+                    <!--<li ng-class="{active: $state.includes('situation')}">-->
+                        <!--<a href="">배송처리 현황<span class="fa arrow"></span></a>-->
+                        <!--<ul class="nav nav-third-level collapse" ng-class="{in: $state.includes('situation')}">-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step1'})" ui-sref-opts="{reload: true, inherit: false}">결제완료</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step2'})" ui-sref-opts="{reload: true, inherit: false}">제품준비중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step3'})" ui-sref-opts="{reload: true, inherit: false}">배송처리중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step4'})" ui-sref-opts="{reload: true, inherit: false}">배송중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step5'})" ui-sref-opts="{reload: true, inherit: false}">배송완료</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation({'step':'step3x'})" ui-sref-opts="{reload: true, inherit: false}">반품중</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li ui-sref-active="active"><a ui-sref="delivery.search" ui-sref-opts="{reload: true, inherit: false}">주문정보 조회</a></li>-->
+                    <!--<li ng-class="{active: $state.includes('situation2')}">-->
+                        <!--<a href="">배송처리 현황(박스) <span class="fa arrow"></span></a>-->
+                        <!--<ul class="nav nav-third-level collapse" ng-class="{in: $state.includes('situation2')}">-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step1'})" ui-sref-opts="{reload: true, inherit: false}">결제완료</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step2'})" ui-sref-opts="{reload: true, inherit: false}">제품준비중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step3'})" ui-sref-opts="{reload: true, inherit: false}">배송처리중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step4'})" ui-sref-opts="{reload: true, inherit: false}">배송중</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step5'})" ui-sref-opts="{reload: true, inherit: false}">배송완료</a></li>-->
+                            <!--<li ui-sref-active="active"><a ui-sref="delivery.situation2({'step':'step3x'})" ui-sref-opts="{reload: true, inherit: false}">반품중</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li ng-class="{active: $state.includes('delivery.situation')}"><a ui-sref="delivery.situation({'step':'step1'})" ui-sref-opts="{reload: true, inherit: false}">배송처리 현황</a></li>-->
+                    <li ng-class="{active: $state.includes('delivery.situation2')}"><a ui-sref="delivery.situation2" ui-sref-opts="{reload: true, inherit: false}">배송처리 현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="delivery.search" ui-sref-opts="{reload: true, inherit: false}">주문 이력 조회</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('calculation')}">
+                <a href=""><i class="fa fa-won"></i> <span class="nav-label">정산</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('calculation')}">
+                    <li ui-sref-active="active"><a ui-sref="calculation.list" ui-sref-opts="{reload: true, inherit: false}">정산내역</a></li>
+                    <!--<li ui-sref-active="active"><a ui-sref="calculation.taxinvoice" ui-sref-opts="{reload: true, inherit: false}">세금계산서내역</a></li>-->
+                    <li ui-sref-active="active"><a ui-sref="calculation.deposit" ui-sref-opts="{reload: true, inherit: false}">예치금내역</a></li>
+                    <li ui-sref-active="active"><a ui-sref="calculation.vatlist" ui-sref-opts="{reload: true, inherit: false}">부가세내역</a></li>
+                    <li ui-sref-active="active"><a ui-sref="calculation.onepointlist" ui-sref-opts="{reload: true, inherit: false}">원포인트내역</a></li>
+                    <li ui-sref-active="active"><a ui-sref="calculation.onecashlist" ui-sref-opts="{reload: true, inherit: false}">원캐시내역</a></li>
+                    <li ui-sref-active="active"><a ui-sref="calculation.addfeelist" ui-sref-opts="{reload: true, inherit: false}">광고수수료내역</a></li>
+                </ul>
+            </li>
+
+            <!--<li ng-class="{active: $state.includes('inquiries')}">-->
+                <!--<a href=""><i class="fa fa-comments-o"></i> <span class="nav-label">고객 문의</span><span class="fa arrow"></span></a>-->
+                <!--<ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('inquiries')}">-->
+                    <!--<li ui-sref-active="active"><a ui-sref="inquiries.list" ui-sref-opts="{reload: true, inherit: false}">1:1 문의하기</a></li>-->
+                    <!--<li ui-sref-active="active"><a ui-sref="inquiries.feedback" ui-sref-opts="{reload: true, inherit: false}">상품 댓글</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li ng-class="{active: $state.includes('posts')}">-->
+                <!--<a href=""><i class="fa fa-comments-o"></i> <span class="nav-label">게시물 관리(개발중)</span><span class="fa arrow"></span></a>-->
+                    <!--<ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('posts')}">-->
+                    <!--<li ng-class="{active: $state.includes('posts.*',{bid:100})}"><a ui-sref="posts.list({bid:100})" ui-sref-opts="{reload: true, inherit: false}">1:1 문의하기</a></li>-->
+                    <!--<li ng-class="{active: $state.includes('posts.*',{bid:200})}"><a ui-sref="posts.list({bid:200})" ui-sref-opts="{reload: true, inherit: false}"><i class="fa fa-smile-o"></i> 상품 댓글</a></li>-->
+                    <!--<li ng-class="{active: $state.includes('posts.*',{bid:300})}"><a ui-sref="posts.list({bid:300})" ui-sref-opts="{reload: true, inherit: false}">판매자 게시판</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <li ng-class="{active: $state.includes('posts')}">
+                <a href=""><i class="fa fa-comments-o"></i> <span class="nav-label">게시물 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('posts')}">
+                    <li ng-class="{active: $state.includes('posts.list')}"><a ui-sref="posts.list" ui-sref-opts="{reload: true, inherit: false}"><i class="fa fa-smile-o"></i> 게시판 관리</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('submall')}">
+                <a ui-sref="submall.list"><i class="fa fa-building"></i> <span class="nav-label">외부몰 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('submall')}">
+                    <li ui-sref-active="active"><a ui-sref="submall.list" ui-sref-opts="{reload: true, inherit: false}">외부몰 목록</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('sellers')}">
+                <a ui-sref="sellers.list"><i class="fa fa-briefcase"></i> <span class="nav-label">판매자 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('sellers')}">
+                    <li ui-sref-active="active"><a ui-sref="sellers.list" ui-sref-opts="{reload: true, inherit: false}">판매자 목록</a></li>
+                    <li ui-sref-active="active"><a ui-sref="sellers.edit({id:0})" ui-sref-opts="{reload: true, inherit: false}">새로운 판매자 등록</a></li>
+                    <li ui-sref-active="active"><a ui-sref="sellers.grade" ui-sref-opts="{reload: true, inherit: false}">판매자 등급 관리</a></li>
+                    <li ui-sref-active="active"><a ui-sref="sellers.sales" ui-sref-opts="{reload: true, inherit: false}">판매자 매출 목록</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('customers')}">
+                <a ui-sref="customers.list"><i class="fa fa-users"></i> <span class="nav-label">회원 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('customers')}">
+                    <li ui-sref-active="active"><a ui-sref="customers.admin" ui-sref-opts="{reload: true, inherit: false}">관리자 계정 관리</a></li>
+                    <!--<li ui-sref-active="active"><a ui-sref="customers.stat" ui-sref-opts="{reload: true, inherit: false}">회원 통계</a></li>-->
+                    <li ui-sref-active="active"><a ui-sref="customers.list" ui-sref-opts="{reload: true, inherit: false}">회원 목록</a></li>
+                    <!--<li ui-sref-active="active"><a ui-sref="customers.secret" ui-sref-opts="{reload: true, inherit: false}">원쉐어 현황</a></li>-->
+                    <!--<li ui-sref-active="active"><a ui-sref="customers.sessions" ui-sref-opts="{reload: true, inherit: false}">접속 통계</a></li>-->
+                    <li ui-sref-active="active"><a ui-sref="customers.grades" ui-sref-opts="{reload: true, inherit: false}">등급 관리</a></li>
+                    <!--<li ui-sref-active="active"><a ui-sref="customers.dmail" ui-sref-opts="{reload: true, inherit: false}">DM 관리</a></li>-->
+
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('marketing')}">
+                <a ui-sref="marketing.stat"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">마케팅 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('marketing')}">
+                    <li ui-sref-active="active"><a ui-sref="marketing.stat" ui-sref-opts="{reload: true, inherit: false}">회원 통계</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.sessions" ui-sref-opts="{reload: true, inherit: false}">접속 통계</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.itemdetaillog" ui-sref-opts="{reload: true, inherit: false}">상품별 유입현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.gooddetaillog" ui-sref-opts="{reload: true, inherit: false}">Goods 별 유입현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.eventdetaillog" ui-sref-opts="{reload: true, inherit: false}">이벤트별 유입현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.malldetaillog" ui-sref-opts="{reload: true, inherit: false}">몰별 유입현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.secret" ui-sref-opts="{reload: true, inherit: false}">원쉐어 현황</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.dmail" ui-sref-opts="{reload: true, inherit: false}">DM 관리</a></li>
+                    <li ui-sref-active="active"><a ui-sref="marketing.push" ui-sref-opts="{reload: true, inherit: false}">Push 관리</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('robin')}">
+                <a ui-sref="robin.view({id:0})"><i class="fa fa-database"></i> <span class="nav-label">데이터 수집</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('robin')}">
+                    <!--<li ng-class="{active: $state.includes('crawler.stat')}"><a ui-sref="crawler.stat" ui-sref-opts="{reload: true, inherit: false}">통계</a></li>-->
+                    <li ng-class="{active: $state.includes('robin.chart2')}"><a ui-sref="robin.chart2({id:0})" ui-sref-opts="{reload: true, inherit: false}">상품별 가격추이</a></li>
+                    <li ng-class="{active: $state.includes('robin.week')}"><a ui-sref="robin.week({cat_id:50000001})" ui-sref-opts="{reload: true, inherit: false}">주간 인기도 추이</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('design')}">
+                <a ui-sref="design.eventView"><i class="fa fa-file-picture-o"></i> <span class="nav-label">디자인 관리</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('design')}">
+                    <li ng-class="{active: $state.includes('design.eventView')}"><a ui-sref="design.eventView" ui-sref-opts="{reload: true, inherit: false}">이벤트 관리</a></li>
+                    <li ng-class="{active: $state.includes('design.eventList')}"><a ui-sref="design.eventList" ui-sref-opts="{reload: true, inherit: false}">메인 박스 배너 관리</a></li>
+                    <li ng-class="{active: $state.includes('design.notice')}"><a ui-sref="design.notice" ui-sref-opts="{reload: true, inherit: false}">팝업 관리</a></li>
+                    <li ng-class="{active: $state.includes('design.line')}"><a ui-sref="design.line" ui-sref-opts="{reload: true, inherit: false}">띠배너 관리</a></li>
+                    <li ng-class="{active: $state.includes('design.brand')}"><a ui-sref="design.brand" ui-sref-opts="{reload: true, inherit: false}">브랜드관 관리</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('cs')}">
+                <a href=""><i class="fa fa-headphones"></i> <span class="nav-label">CS 관리 </span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('cs')}">
+                    <li ui-sref-active="active"><a ui-sref="cs.errorPaid" ui-sref-opts="{reload: true, inherit: false}">결제 오류 관리(아임포트) </a></li>
+                    <li ui-sref-active="active"><a ui-sref="cs.orderChange" ui-sref-opts="{reload: true, inherit: false}">주문 상태 변경 관리 </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

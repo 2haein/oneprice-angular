@@ -19,6 +19,11 @@ angular.module('oneprice', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
 				controller: 'TestController',
 
 		})
+			.when('/test2', {
+				templateUrl: 'app/test2/content.html',
+				controller: 'Test2Controller',
+
+			})
 		$locationProvider.html5Mode(true);
 	})
 
