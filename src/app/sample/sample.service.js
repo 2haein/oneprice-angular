@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyApp')
+angular.module('oneprice')
 	.factory('SampleService',
 		['$http', '$q',
 		function ($http, $q) {

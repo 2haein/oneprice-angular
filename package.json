@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-gulp-starter",
+  "name": "angularjs",
   "version": "0.0.1",
-  "description": "A starter project using AngularJS with Gulp",
+  "description": "A starter project using AngularJS",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "~1.7.1",
@@ -42,7 +42,7 @@
     "main-bower-files": "~2.4.0",
     "mocha": "~1.20.1",
     "protractor": "~1.4.0",
-    "require-dir": "~0.1.0",
+    "require-dir": "^1.0.0",
     "sinon": "~1.10.3",
     "sinon-chai": "~2.5.0",
     "uglify-save-license": "~0.4.1",

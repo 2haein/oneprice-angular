@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyApp')
+angular.module('oneprice')
 	.controller('SampleCtrl',
 		['$scope', 'SampleService',
 		function ($scope, SampleService) {

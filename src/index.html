@@ -1,8 +1,9 @@
 <!doctype html>
-<html class="no-js" ng-app="MyApp">
+<html class="no-js" ng-app="oneprice">
 	<head>
 	<meta charset="utf-8">
-	<title>AngularJS-Gulp Starter</title>
+	<title>Oneprice</title>
+		<base href="/"/>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +26,7 @@
 	<!-- build:js scripts/modernizr.js -->
 	<script src="../bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
+
 	</head>
 	<body>
 	<!--[if lt IE 9]>
@@ -35,8 +37,11 @@
 
 	<div ng-include="'components/partials/navbar.html'"></div>
 
-	<div ng-view></div>
 
+
+	<toaster-container></toaster-container>
+	<div ng-view></div>
+	<div ui-view></div>
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
 	<script src="../bower_components/angular/angular.js"></script>
@@ -48,8 +53,13 @@
 
 	<!-- build:js({.tmp,src}) scripts/app.js -->
 	<!-- inject:js -->
+	<script src="app/config.my.js"></script>
+	<script src="app/index.config.js"></script>
+	<script src="app/index.controller.js"></script>
 	<script src="app/index.js"></script>
 	<script src="app/main/main.controller.js"></script>
+	<script src="app/test/TestService.js"></script>
+	<script src="app/test/controller.js"></script>
 	<script src="app/sample/sample.controller.js"></script>
 	<script src="app/sample/sample.service.js"></script>
 	<!-- endinject -->

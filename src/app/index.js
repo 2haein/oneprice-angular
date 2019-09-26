@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('MyApp', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
-	.config(function ($routeProvider) {
+angular.module('oneprice', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
+	.config(function ($routeProvider,$locationProvider) {
 		$routeProvider
 			.when('/', {
 				templateUrl: 'app/main/index.html',
@@ -11,13 +11,19 @@ angular.module('MyApp', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
 				templateUrl: 'app/sample/index.html',
 				controller: 'SampleCtrl'
 			})
-			.otherwise({
-				redirectTo: '/'
-			});
+			// .otherwise({
+			// 	redirectTo: '/'
+			// });
+			.when('/test', {
+				templateUrl: 'app/test/content.html',
+				controller: 'TestController',
+
+		})
+		$locationProvider.html5Mode(true);
 	})
 
 	.controller('NavBarCtrl', ['$scope', function ($scope) {
-			$scope.isCollapsed = true;
+
 	}])
 
 ;
