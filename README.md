@@ -1,7 +1,3 @@
-# OnePrice
-
-## Introduction
-
 Oneprice using AngularJS
 
 Run the web app
@@ -29,7 +25,7 @@ $ bower install
 Deployment
 --------------
 
-```sh
+```
 $ gulp build
 ```
 
